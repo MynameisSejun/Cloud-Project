@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .notice-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .notice-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .notice-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .notice-header p {
+    color: #999;
+    font-size: 1.1em;
+  }
+  
+  .notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .notice-item {
+    background: #2A2A2A;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .notice-item:hover {
+    transform: translateY(-2px);
+    background-color: #333;
+  }
+  
+  .notice-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .notice-badge {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .notice-badge.업데이트 {
+    background-color: #4a90e2;  /* 파란색 계열 */
+  }
+  
+  .notice-badge.이벤트 {
+    background-color: #e74c3c;  /* 빨간색 계열 */
+  }
+  
+  .notice-badge.시스템 {
+    background-color: #2ecc71;  /* 초록색 계열 */
+  }
+  
+  .notice-item:hover .notice-badge.업데이트 {
+    background-color: #357abd;
+  }
+  
+  .notice-item:hover .notice-badge.이벤트 {
+    background-color: #c0392b;
+  }
+  
+  .notice-item:hover .notice-badge.시스템 {
+    background-color: #27ae60;
+  }
+  
+  .notice-date {
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .notice-item h3 {
+    margin: 0 0 8px 0;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  
+  .notice-item p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9em;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 40px;
+  }
+  
+  .page-btn {
+    background: #333;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .page-btn:hover {
+    background: #444;
+  }
+  
+  .page-btn.active {
+    background: #4CAF50;
+  }
+  
+  @media (max-width: 768px) {
+    .notice-container {
+      padding: 0 15px;
+    }
+  
+    .notice-header h1 {
+      font-size: 2em;
+    }
+  
+    .notice-item {
+      padding: 15px;
+    }
+  } 
+  
+  /* 공지사항 상세 스타일 */
+  .notice-detail {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice-detail-header {
+    margin-bottom: 30px;
+  }
+  
+  .notice-detail-header h2 {
+    font-size: 1.8em;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .notice-detail-content {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .notice-detail-content p {
+    margin-bottom: 20px;
+  }
+  
+  .notice-attachment {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .notice-attachment a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .notice-attachment a:hover {
+    text-decoration: underline;
+  }
+  
+  .notice-actions {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .btn-back {
+    padding: 10px 25px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s;
+  }
+  
+  .btn-back:hover {
+    background-color: #357abd;
+  }
+  
+  .notice-not-found {
+    text-align: center;
+    padding: 50px 0;
+    color: #666;
+  }
+  
+  /* 기존 배지 스타일 유지 */
+  .notice-badge {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .notice-badge.업데이트 { background-color: #4a90e2; }
+  .notice-badge.이벤트 { background-color: #e74c3c; }
+  .notice-badge.시스템 { background-color: #2ecc71; }
+  
+  /* 공지사항 네비게이션 스타일 */
+  .notice-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .btn-nav {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    color: #495057;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .btn-nav:hover:not(.disabled) {
+    background-color: #e9ecef;
+    color: #212529;
+  }
+  
+  .btn-nav.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+  }
+  
+  .btn-nav .arrow {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  
+  /* 기존 목록으로 버튼 스타일 수정 */
+  .btn-back {
+    padding: 8px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s;
+  }
+  
+  .btn-back:hover {
+    background-color: #357abd;
+  }
+  
+  /* 작성자 정보 스타일 */
+  .notice-writer {
+    color: #888;
+    font-size: 0.9em;
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  .notice-writer::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+  }

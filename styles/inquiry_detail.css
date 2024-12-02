@@ -1,0 +1,138 @@
+.detail-container {
+    max-width: 800px;
+    margin: 120px auto 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.detail-header h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.inquiry-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inquiry-status.pending {
+    background: #ffd43b;
+    color: #000;
+}
+
+.inquiry-status.completed {
+    background: #51cf66;
+    color: #fff;
+}
+
+.inquiry-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.inquiry-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.inquiry-type {
+    background: #e9ecef;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.inquiry-title {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.inquiry-content {
+    line-height: 1.6;
+    color: #444;
+}
+
+.answer-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f8ff;
+    border-radius: 8px;
+    border-left: 4px solid #339af0;
+}
+
+.answer-header {
+    margin-bottom: 15px;
+}
+
+.answer-header h3 {
+    margin: 0 0 10px 0;
+    color: #1971c2;
+}
+
+.answer-info {
+    display: flex;
+    gap: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.answer-content {
+    line-height: 1.6;
+    color: #444;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-back {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.error-message {
+    text-align: center;
+    padding: 30px;
+    color: #dc3545;
+}
+
+.error-message p {
+    margin-bottom: 20px;
+} 

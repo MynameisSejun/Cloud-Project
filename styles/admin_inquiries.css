@@ -1,0 +1,155 @@
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.admin-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section select {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inquiry-item {
+    background: #FBFBFB;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.inquiry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inquiry-type {
+    background: #e9ecef;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.inquiry-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.inquiry-status.pending {
+    background: #ffd43b;
+    color: #000;
+}
+
+.inquiry-status.completed {
+    background: #51cf66;
+    color: #fff;
+}
+
+.inquiry-content h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.inquiry-writer {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.inquiry-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.answer-form textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn-answer {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-answer:hover {
+    background: #0056b3;
+}
+
+.answer-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.answer-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.answer-text {
+    line-height: 1.6;
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pending-count {
+    color: #dc3545;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.pending-count span {
+    font-weight: bold;
+}
+
+.inquiry-item[data-status="PENDING"] {
+    border-left: 4px solid #ffd43b;
+}
+
+.inquiry-item[data-status="COMPLETED"] {
+    border-left: 4px solid #51cf66;
+    opacity: 0.8;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.filter-section select {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+} 

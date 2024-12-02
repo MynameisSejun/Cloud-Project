@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.course-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.course-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.course-header p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.course-map {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.course-map img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.course-info {
+    background: #444444;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.course-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px;
+    background: #333333;
+    border-radius: 8px;
+}
+
+.stat-item h3 {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.course-description {
+    margin-bottom: 25px;
+}
+
+.course-description h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.course-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.course-tips-container {
+    margin: 0 -20px;
+    padding: 0 20px;
+}
+
+.course-tips {
+    background: #333333;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.course-tips h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.course-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-tips li {
+    color: #f0f0f0;
+    font-size: 1.1em;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.8;
+}
+
+.course-tips li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f0f0f0;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .course-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-tips {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .course-tips ul {
+        gap: 15px;
+    }
+}
